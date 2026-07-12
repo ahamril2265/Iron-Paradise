@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Badminton | Iron Paradise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .booking-hero {
+            height: 50vh;
+            background-image: url('New Asset/Badminton/Screenshot 2026-07-13 021558.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .booking-form-section {
+            padding: 5rem 0;
+            background-color: var(--bg-light);
+            min-height: 50vh;
+        }
+
+        .booking-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--bg-dark);
+            padding: 3rem;
+            border-radius: 8px;
+            border: 1px solid #333;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            background: #111;
+            border: 1px solid #444;
+            color: #fff;
+            font-family: var(--font-body);
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .total-price {
+            font-size: 1.5rem;
+            font-family: var(--font-heading);
+            color: var(--accent);
+            text-align: right;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo"><img src="New Asset/Screenshot 2026-07-13 021517.png" alt="Iron Paradise Logo"></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#classes">Classes</a></li>
+                <li><a href="booking.html" style="color: var(--accent);">Book Badminton</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="booking-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>BOOK <span class="accent">BADMINTON</span></h1>
+                <p>Reserve one of our two premium badminton courts.</p>
+            </div>
+        </section>
+
+        <section class="booking-form-section">
+            <div class="container">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="userName">Full Name</label>
+                        <input type="text" id="userName" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userPhone">Phone Number</label>
+                        <input type="tel" id="userPhone" class="form-control" placeholder="Enter your phone number"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="court">Select Court</label>
+                        <select id="court" class="form-control" required>
+                            <option value="Court 1">Court 1</option>
+                            <option value="Court 2">Court 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Start Time</label>
+                        <input type="time" id="time" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Duration (Hours)</label>
+                        <input type="number" id="duration" class="form-control" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="heads">Number of Players</label>
+                        <input type="number" id="heads" class="form-control" min="1" max="4" value="2" required>
+                    </div>
+                    <div class="total-price" id="totalPriceDisplay">Total: ₹200</div>
+                    <button type="submit" class="btn btn-primary full-width">PROCESS BOOKING & WHATSAPP</button>
+                </form>
+
+                <div id="bookingSuccess"
+                    style="display: none; text-align: center; max-width: 600px; margin: 0 auto; background: var(--bg-dark); padding: 3rem; border-radius: 8px; border: 1px solid var(--accent);">
+                    <h2 style="color: var(--accent); margin-bottom: 1rem;">BOOKING PROCESSED</h2>
+                    <p style="margin-bottom: 2rem;">The WhatsApp confirmation has been initiated to the customer's
+                        phone. Please add this booking to your Iron Paradise Calendar to block the slot.</p>
+                    <a id="calendarBtn" href="#" target="_blank" class="btn btn-secondary full-width"
+                        style="margin-bottom: 1rem; color: #fff;">ADD TO BOOKING CALENDAR</a>
+                    <button id="bookAnotherBtn" class="btn btn-primary full-width">BOOK ANOTHER COURT</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo"><img src="New Asset/Screenshot 2026-07-13 021517.png" alt="Iron Paradise Logo"></div>
+                <p>Forging legends daily.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>+91 6369006808</p>
+                <p>info@ironparadise.com</p>
+                <p>SKP Thottam, 177, Sathy Rd, Lakshmi Nagar,<br>Kurumbapalayam SSKulam, Kovilpalayam,<br>Tamil Nadu
+                    641107</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Iron Paradise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="booking.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
