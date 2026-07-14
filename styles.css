@@ -199,7 +199,7 @@ h4,
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url('images/hero_gym.png');
+    background-image: url('New Asset/Screenshot 2026-07-13 021649.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -271,7 +271,7 @@ h4,
 .features {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
 }
 
@@ -397,9 +397,9 @@ h4,
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 2rem;
-    align-items: center;
+    align-items: stretch;
 }
 
 .pricing-card {
@@ -620,4 +620,219 @@ footer {
     .pricing-card.premium {
         transform: none;
     }
+}
+
+/* --- New Additions for Redesign --- */
+
+/* Utility Classes */
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.py-8 {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.max-w-800 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+/* Highlights Strip */
+.highlights-strip {
+    background-color: var(--accent);
+    padding: 2rem 0;
+    color: white;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.highlight-item .icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-item p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+.highlight-item small {
+    font-weight: 400;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* Teaser Section */
+.teaser-section {
+    padding: 4rem 0;
+    background-color: var(--bg-light);
+}
+
+.teaser-text {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+/* Placeholders & Aspect Ratio */
+.aspect-ratio-box {
+    width: 100%;
+    padding-top: 75%;
+    /* 4:3 */
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.placeholder-dark {
+    background: #1a1a1a;
+    border: 2px dashed #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    position: relative;
+}
+
+.placeholder-dark span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* Gallery Section */
+.gallery-section {
+    background-color: var(--bg-dark);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-item {
+    height: 250px;
+    position: relative;
+    border-radius: 4px;
+}
+
+/* Simple List overrides for classes */
+.simple-list {
+    list-style: disc inside;
+    color: var(--text-secondary);
+}
+
+.simple-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Adjust trainers alignment */
+.trainers {
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.footer-facilities {
+    margin-top: 1rem;
+}
+
+/* Franchise Form */
+.form-section {
+    color: white;
+}
+
+.franchise-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--bg-light);
+    padding: 3rem;
+    border-radius: 8px;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: #111;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.mb-2 {
+    margin-bottom: 1rem !important;
 }

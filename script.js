@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Initial state for animated elements
-    const animatedElements = document.querySelectorAll('.class-card, .pricing-card, .about-text');
+    const animatedElements = document.querySelectorAll('.class-card, .pricing-card, .about-text, .highlight-item, .gallery-item');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';

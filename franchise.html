@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franchise Opportunities | Iron Paradise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+                <img src="New Asset/Screenshot 2026-07-13 021517.png" alt="Iron Paradise Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#programs">Programs</a></li>
+                <li><a href="index.html#membership">Membership</a></li>
+                <li><a href="booking.html" class="accent">Book Badminton</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero"
+            style="background-image: linear-gradient(to bottom, rgba(10,10,10,0.8), rgba(10,10,10,1)), url('New Asset/Screenshot 2026-07-13 021649.png'); height: 60vh;">
+            <div class="hero-content" style="padding-top: 5rem;">
+                <h1 class="glitch-text">OWN AN <span class="accent">IRON PARADISE</span></h1>
+                <p>Bring Kovilpalayam's fastest-growing fitness brand to your city. Together, let's build a fitness
+                    culture that works for everyone.</p>
+            </div>
+        </section>
+
+        <section class="teaser-section py-8">
+            <div class="container max-w-800 text-center">
+                <h2>WHY PARTNER WITH <span class="accent">US?</span></h2>
+                <p class="mt-4 text-secondary" style="font-size: 1.1rem; line-height: 1.8;">
+                    Iron Paradise is fundamentally different. We have proven that a budget-friendly gym can still offer
+                    a premium, community-driven experience. Combined with our indoor Badminton Courts, our hybrid model
+                    drives outstanding member retention and diversified revenue streams. We provide complete setup
+                    guidance, standard operating procedures, layout designs, and continuous marketing support to help
+                    you succeed.
+                </p>
+            </div>
+        </section>
+
+        <section class="form-section py-8" style="background-color: var(--bg-dark); border-top: 1px solid #222;">
+            <div class="container">
+                <div class="section-header text-center mb-2">
+                    <h2>FRANCHISE <span class="accent">APPLICATION</span></h2>
+                    <p>Fill out the inquiry form below, and our team will get in touch with you shortly.</p>
+                </div>
+
+                <form class="franchise-form mt-4">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Proposed City/Location</label>
+                        <input type="text" id="city" name="city" required placeholder="E.g., Coimbatore">
+                    </div>
+                    <div class="form-group">
+                        <label for="investment">Available Investment Budget</label>
+                        <select id="investment" name="investment" required>
+                            <option value="">Select a range</option>
+                            <option value="15-25L">₹15 Lakhs – ₹25 Lakhs</option>
+                            <option value="25-40L">₹25 Lakhs – ₹40 Lakhs</option>
+                            <option value="40L+">₹40 Lakhs+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Anything else you'd like us to know?</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Briefly describe your business experience..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width mt-3">SUBMIT INQUIRY</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo"><img src="New Asset/Screenshot 2026-07-13 021517.png" alt="Iron Paradise Logo"></div>
+                <p>Fitness for Everyone. Prices for Everyone.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact HQ</h4>
+                <p>franchise@ironparadise.com</p>
+                <p>+91 95976 70747</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Iron Paradise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
